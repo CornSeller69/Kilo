@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kilo</title>
+    <link rel="stylesheet" href="Materials/kilo.css">
+    <link rel="shortcut icon" href="Materials/icon.png" type="image/x-icon">
+</head>
+<body>
+    <b style="position: absolute; left: 10px; top: 2px; color: white; font-size: 50px;">Kilo</b>
+    <div id="card"><img src="Materials/Cards/no.png" alt="If you dont see a card here, please refresh your page"></div>
+    <h2 id="score">Current score: 0</h2>
+    <h2 id="hscore">Highscore: 0</h2>
+    <button id="button1">Play</button>
+    <button id="button2">How to play?</button>
+    <div id="helpbox">
+        <button onclick="hideHelp()">Close</button>
+        <h2 style="font-size: 45px;">How to play Kilo?</h2>
+        <p style="color: white; text-align: center; font-size: 30px;">You score points if your choice of either 'Higher' or 'Lower' matches.<br>
+            You will score a point on 'Lower' if the next card is lower than the current one, and will score on 'Higher' if it's equal or higher.<br>
+            Cards have values corresponding to the number on them; as for Ace, Joker, Queen and King it's quite different however. Since Ace is equal to 11 (yes, there's no card with value of 1, we start with value of 2 in this game),<br>
+            the other three cards are usually understood as *more than 10, but less than 11*. They go in this order: J &#60; Q &#60; K.
+        </p>
+    </div>
+    <p style="position: absolute; right: 10px; bottom: -7px; color: white;">by CornSeller</p>
+</body>
+<script src="Materials/kilo.js"></script>
+</html>

@@ -1,0 +1,69 @@
+body {
+    overflow: hidden;
+    background-color: green;
+    border: 2px dotted white;
+    width: 99.85%; /* j. n. */
+    height: 99.85%; /* j. n. */
+    margin-inline: auto;
+    margin: 0;
+    box-sizing: border-box; /* upewnia sie na temat tego aby border nie uciekał poza ekran */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+#card {
+    margin-inline: auto;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+#card img {
+    display: block;
+    margin-inline: auto;
+    margin: 0 auto;
+}
+
+#helpbox {
+    transition: margin-top 0.5 ease-in;
+    top: 3%;
+    margin-inline: auto;
+    width: 50%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    visibility: hidden;
+    background-color: #22B14Cff;
+    height: 90%;
+    border: 2px dotted white;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+#button1,#button2 {
+    margin: 0 auto;
+    margin-inline: auto;
+    display: block;
+    width: 10%;
+    height: 7%;
+    font-size: 160%;
+    background-color: #22B14Cff;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#helpbox button {
+    width: 10%;
+    height: 7%;
+    font-size: 160%;
+    background-color: #22B14Cff;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#helpbox h2 {
+    margin-top: 14%;
+}
