@@ -6,11 +6,11 @@ body {
     align-content: center;
     background-color: green;
     border: 2px dotted white;
-    width: 100%; /* j. n. */
+    width: 99.9vw; /* j. n. */
     height: 100%; /* j. n. */
     margin-inline: auto;
     margin: 0;
-    box-sizing: border-box; /* upewnia sie na temat tego aby border nie uciekał poza ekran */
+    box-sizing: border-box; /* upewnia sie na temat tego aby border nie uciekał poza ekran (i tak w sumie takie drzwiczki z wieliczki)*/
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -53,6 +53,7 @@ h2 {
     display: block;
     width: 10%;
     height: 7%;
+    cursor: pointer;
     font-size: 160%;
     background-color: #22B14Cff;
     color: white;
@@ -61,13 +62,23 @@ h2 {
     transition: opacity 0.5s ease-in-out;
 }
 
+#button1:hover,#button2:hover {
+    background-color: rgb(30, 151, 66);
+}
+
 #helpbox button {
-    width: 10%;
+    width: 11%;
     height: 7%;
+    text-align: center;
     font-size: 160%;
-    background-color: #22B14Cff;
+    background-color: rgb(0, 148, 0);
+    cursor: pointer;
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#helpbox button:hover {
+    background-color: rgb(0, 129, 0);
 }
     
 
