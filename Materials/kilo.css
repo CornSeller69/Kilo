@@ -48,7 +48,13 @@ h2 {
 }
 
 #button1,#button2 {
+    opacity: 1;
+}
+
+#button1,#button2,#button4,#button5 {
     margin: 0 auto;
+    left: 0;
+    right: 0;
     margin-inline: auto;
     display: block;
     width: 10%;
@@ -58,11 +64,16 @@ h2 {
     background-color: #22B14Cff;
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    opacity: 1;
     transition: opacity 0.5s ease-in-out;
 }
 
-#button1:hover,#button2:hover {
+#button5,#button4 {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+#button1:hover,#button2:hover,#button5:hover,#button4:hover {
     background-color: rgb(30, 151, 66);
 }
 
@@ -84,4 +95,15 @@ h2 {
 
 #helpbox h2 {
     margin-top: 14%;
+}
+
+#frame2 {
+    position: absolute;
+    height: 95%;
+    width: 97.5%;
+    border: 3px solid white;
+    margin: 20px;
+    left: 0;
+    top: 0;
+    pointer-events: none;
 }
